@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastre-se na empresa</h1>
+    <div class="container" >
+        <div class="content">
+    <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" class="texto"/>
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" class="texto"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" class="texto"/>
+          </p>
+           
+          <p>
+            <div class="radio">
+            <label for="">Quer ser constatado como?</label>
+            <br>
+            <br>
+            <input type="radio" id="masc" name="estado_civil" value="whatsapp ">
+            <label for="masc">whatsapp</label>
+            <input type="radio" id="fem" name="estado_civil" value="Email">
+            <label for="fem">Email</label> 
+            </div>
+          </p>
+
+          <p>
+            <label for="birth-date">Data de Nascimento:</label>
+            <input type="date" id="birth-date" name="birth-date" required>
+          </p>
+
+           <p>
+            <input type="checkbox" id="aceitarTermos">
+            <label for="">Aceita os termos de uso?</label>
+           </p>
+
+          <p> 
+            <button type="button" onclick="botaoCad()">Cadastrar</button>
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="login.html"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
